@@ -1,0 +1,105 @@
+/* Background */
+.register-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(-45deg, #00c6ff, #7f00ff, #ff6a00, #ee0979);
+    background-size: 400% 400%;
+    animation: gradientBG 10s ease infinite;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Animation */
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Card */
+.register-card {
+    width: 360px;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+    text-align: center;
+}
+
+/* Title */
+.register-card h2 {
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+.register-card p {
+    font-size: 13px;
+    opacity: 0.8;
+}
+
+/* Form */
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Labels */
+label {
+    text-align: left;
+    font-size: 13px;
+    margin: 8px 0 5px;
+}
+
+/* Inputs */
+input {
+    padding: 12px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 10px;
+    background: rgba(17, 7, 7, 0.9);
+    transition: 0.3s;
+}
+
+input:focus {
+    transform: scale(1.03);
+    box-shadow: 0 0 10px #fff;
+}
+
+/* Button */
+button {
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+    .register-card {
+        width: 90%;
+        padding: 20px;
+    }
+}
